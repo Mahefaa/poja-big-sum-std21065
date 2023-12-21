@@ -1,0 +1,11 @@
+config:
+  target: " https://j3c93w7bpb.execute-api.eu-west-3.amazonaws.com/Prod "
+  phases:
+    - duration: 60
+      arrivalRate: 10
+      rampTo: 600
+
+scenarios:
+  - flow:
+      - get:
+          url: "/Prod/ping"
