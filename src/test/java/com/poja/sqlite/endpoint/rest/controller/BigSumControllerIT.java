@@ -13,11 +13,11 @@ public class BigSumControllerIT extends FacadeIT {
 
     @Test
     void add_ok() {
-        BigInteger a = BigInteger.ONE;
+        BigInteger a = new BigInteger("1000000000000000000000");
         BigInteger b = BigInteger.TWO;
 
         BigInteger actual = subject.add(a, b);
 
-        assertEquals(BigInteger.valueOf(3), actual);
+        assertEquals(new BigInteger("1000000000000000000002"), actual);
     }
 }
